@@ -1,0 +1,88 @@
+{
+	"id": "69abe7b3-689a-4d92-954f-960db5511889",
+	"name": "ps-email-service",
+	"timestamp": "2025-10-21T03:19:26.287Z",
+	"collection_id": "23343986-240a678e-bdfc-4c87-942f-744e34c1711e",
+	"folder_id": 0,
+	"environment_id": "23343986-149d965e-3338-4b0d-a39d-0350d8b9abbb",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-10-21T03:19:25.526Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "a06584bb-9629-46fc-b2e7-52e0d0349f79",
+			"name": "Health Check (GET /)",
+			"url": "https://ps-email-service.tiki.services/",
+			"time": 158,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				158
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "dce5e515-c7f4-4a2b-8fbb-d6181cd6865a",
+			"name": "Email Info (GET /email/info)",
+			"url": "https://ps-email-service.tiki.services/email/info",
+			"time": 94,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				94
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "fa0dfcdd-7b14-4952-810a-997908f9cd0a",
+			"name": "Email List (GET /email)",
+			"url": "https://ps-email-service.tiki.services/email?email=user@example.com",
+			"time": 117,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				117
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 369,
+	"collection": {
+		"requests": [
+			{
+				"id": "a06584bb-9629-46fc-b2e7-52e0d0349f79",
+				"method": "GET"
+			},
+			{
+				"id": "dce5e515-c7f4-4a2b-8fbb-d6181cd6865a",
+				"method": "GET"
+			},
+			{
+				"id": "fa0dfcdd-7b14-4952-810a-997908f9cd0a",
+				"method": "GET"
+			}
+		]
+	}
+}
